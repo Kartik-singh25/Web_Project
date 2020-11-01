@@ -79,14 +79,6 @@
                     }
                 </style>
 
-                <div id="demo">
-                    <h2>special price for you</h2>
-                    <button type="button" onclick="loadDoc()">Check price</button>
-                </div>
-
-
-
-
                 <h1 style="text-align:center;">HOLIDAY INN JAIPUR</h1>
                 <p style="text-align:center;">20% OFF on Room Booking </p>
         </section>
@@ -141,22 +133,7 @@
             </center>
         </div>
     </footer>
-    <script>
-        function loadDoc() {
-            var xhttp = new XMLHttpRequest();
-            xhttp.onreadystatechange = function () {
-                alert('readyState', this.readyState);
-                alert('status', this.status);
-                if (this.readyState == 4 && this.status == 200) {
-                    alert('responseText', this.responseText);
-                    document.getElementById("demo").innerHTML =
-                        this.responseText;
-                }
-            };
-            xhttp.open("GET", "ajax.html", true);
-            xhttp.send();
-        }
-    </script>
+    
 </body>
 
 </html>

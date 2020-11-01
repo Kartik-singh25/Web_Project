@@ -1,7 +1,7 @@
 <?php
 // Initialize the session
 session_start();
- 
+
 // Check if the user is logged in, if not then redirect him to login page
 if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     header("location: login.php");
@@ -12,8 +12,8 @@ $con=mysqli_connect('localhost','root');
 
 mysqli_select_db($con,'userdb');
 ?>
- 
- 
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -52,7 +52,7 @@ height:500px;
 
 <!--<script>
 		var myCalendar;
-		function doOnLoad() 
+		function doOnLoad()
 			{
 			myCalendar = new dhtmlXCalendarObject(["calendar","calendar2",]);
 			}
@@ -67,7 +67,7 @@ height:500px;
 
 
 
-   
+
     <div class="container" style="text-align:center height:100px;">
         <div  style=" padding-top: 48px; padding-bottom: 32px;">
              <h3 style="text-align:center" >HOTEL MANAGEMENT SYSTEM</h3>
@@ -83,8 +83,8 @@ height:500px;
 		</div>
 		<div>
 		<label for="in">Check out:</label> &nbsp;&nbsp;
-            		<input id="calendar2" name="out" placeholder="2015-06-05" required="" type="text"> <br><br>
-		
+            		<input id="calendar2" name="out" placeholder="2015-06-05" required="" type="date"> <br><br>
+
         </div>
         <div>
 			Room Type:
@@ -113,9 +113,9 @@ height:500px;
    </div><!--check -->
    </div>
    </div>
-   
-   
 
-    
+
+
+
 </body>
 </html>
