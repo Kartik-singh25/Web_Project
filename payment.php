@@ -12,13 +12,14 @@
 	$card_name = mysqli_real_escape_string($link,$_POST['name']);
 	$cno = mysqli_real_escape_string($link,$_POST['cvv']);
 	$password = mysqli_real_escape_string($link,$_POST['password']);
+	
 
 
 	$c_no=password_hash($cno,PASSWORD_DEFAULT);
 	$pass=password_hash($password,PASSWORD_DEFAULT);
 
     // attempt insert query execution
-    $sql = "INSERT INTO payment (u_id,username,card_type,months,years,card_no,card_name,cvv,pass) VALUES ('$id','username','$card_type','$m','$y','$card_no','$card_name','$c_no','$pass')";
+    $sql = "INSERT INTO payment (u_id,username,card_type,months,years,card_no,card_name,cvv,pass) VALUES ('$id','$username','$card_type','$m','$y','$card_no','$card_name','$c_no','$pass')";
 
     if(mysqli_query($link, $sql)){
 		header("location: usersession.php");

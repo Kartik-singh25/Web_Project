@@ -37,7 +37,7 @@ mysqli_select_db($con,'userdb');
 }
 .container
 {
-  max-width: 600px;
+  max-width: 700px;
     padding: 14px 14px 14px 14px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.8);
     align-self: center;
@@ -96,9 +96,17 @@ height:500px;
 					<option value="double">Double</option>
                     <option value="three">Three</option>
                 </select>
+                <select name="price">
+                    <option value="Rs.5000(Single A/C)">Rs.5000(Single A/C)</option>
+                    <option value="Rs.4000(Double A/C)">Rs.4000(Double A/C)</option>
+                    <option value="Rs.3000(Triple A/C)">Rs.3000(Triple A/C)</option>
+                    <option value="Rs.4000(Single Non-A/C)">Rs.4000(Single Non-A/C)</option>
+                    <option value="Rs.3000(Double Non-A/C)">Rs.3000(Double Non-A/C)</option>
+                    <option value="Rs.2000(Triple Non-A/C)">Rs.2000(Triple Non-A/C)</option>
+                </select>
 </div>
 	<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	<input type="submit" name="submit" value="submit" />
+	<input type="submit" name="submit" value="Book" />
 	<input type="reset" name="reset" value="Reset" />
 </form>
    </div><!--check -->
