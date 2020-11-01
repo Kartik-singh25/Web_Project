@@ -50,14 +50,14 @@ height:500px;
 }
     </style>
 
-<script>
+<!--<script>
 		var myCalendar;
 		function doOnLoad() 
 			{
 			myCalendar = new dhtmlXCalendarObject(["calendar","calendar2",]);
 			}
 		</script>
-    
+    -->
 </head>
 <body onload="doOnLoad();"style="">
 <div class="m-auto d-block" style="float: right;">
@@ -78,9 +78,10 @@ height:500px;
 	<form action="check.php" method="post">
 		<div style="position:relative;height:80px;">
 		<label for="in">Check in:</label> &nbsp;&nbsp;&nbsp;&nbsp;
-            		<input id="calendar" name="in" placeholder="2015-06-02" required="" type="text"> <br><br>
-</div>
-<div>
+            		<!--<input id="calendar" name="in" placeholder="2015-06-02" required="" type="text"> <br><br>-->
+            		<inpt type='date' id="calendar" name="in" placeholder="2015-06-02" />
+		</div>
+		<div>
 		<label for="in">Check out:</label> &nbsp;&nbsp;
             		<input id="calendar2" name="out" placeholder="2015-06-05" required="" type="text"> <br><br>
 		
