@@ -78,8 +78,7 @@ height:500px;
 	<form action="check.php" method="post">
 		<div style="position:relative;height:80px;">
 		<label for="in">Check in:</label> &nbsp;&nbsp;&nbsp;&nbsp;
-            		<!--<input id="calendar" name="in" placeholder="2015-06-02" required="" type="text"> <br><br>-->
-            		<inpt type='date' id="calendar" name="in" placeholder="2015-06-02" />
+            		<input type='date' id="calendar" name="in" placeholder="2015-06-02" >
 		</div>
 		<div>
 		<label for="in">Check out:</label> &nbsp;&nbsp;
